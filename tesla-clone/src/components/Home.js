@@ -1,8 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
+import { useEffect } from 'react'
 
 function Home() {
+    React.useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <Container>
             <Section 
